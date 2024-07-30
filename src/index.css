@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
+#line {
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+  padding-top: 70px;
+}
+
+text {
+  fill: red;
+  /* animation: move 5s linear infinite; */
+  font-size: 100px;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translate(-20px);
+    transform: rotate(180deg);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+}
